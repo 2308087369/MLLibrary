@@ -1,3 +1,6 @@
+# Define the library version
+__version__ = "0.1.0"
+
 # Import core modules
 from .data_processing import preprocessing, feature_extraction, data_loader
 from .model_selection import algorithms, hyperparameter_tuning, ensembling
