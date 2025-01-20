@@ -1,0 +1,27 @@
+PyML/
+├── __init__.py
+├── data_processing/
+│   ├── __init__.py
+│   ├── data_loader.py       # 数据加载功能
+│   ├── preprocessing.py     # 数据清洗、处理
+│   ├── feature_extraction.py # 特征提取和选择
+├── model_selection/
+│   ├── __init__.py
+│   ├── algorithms.py        # 支持的模型算法（如分类、回归）
+│   ├── hyperparameter_tuning.py # 超参数搜索
+│   ├── ensembling.py        # 模型集成
+├── training/
+│   ├── __init__.py
+│   ├── train.py             # 训练主逻辑
+│   ├── pruning.py           # 模型剪枝逻辑
+├── evaluation/
+│   ├── __init__.py
+│   ├── metrics.py           # 性能评估指标
+│   ├── visualization.py     # 可视化结果（训练曲线、混淆矩阵等）
+├── utils/
+│   ├── __init__.py
+│   ├── file_operations.py   # 文件操作，模型和结果的保存
+│   ├── logger.py            # 日志记录
+├── examples/
+│   ├── example_script.py    # 使用库的示例脚本
+└── requirements.txt         # 库依赖
