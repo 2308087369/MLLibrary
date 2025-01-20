@@ -27,7 +27,15 @@ jobs:
         pip install -r requirements.txt
         pip install pytest
 
+    - name: Check PYTHONPATH
+      env:
+        PYTHONPATH: ${{ github.workspace }}/MLLibrary
+      run: echo $PYTHONPATH
+
+    - name: List directory
+      run: ls -R MLLibrary
+
     - name: Run tests
       env:
-        PYTHONPATH: ${{ github.workspace }}/MLLibrary  # 设置 PYTHONPATH
+        PYTHONPATH: ${{ github.workspace }}/MLLibrary
       run: pytest
