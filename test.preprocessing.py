@@ -2,7 +2,7 @@ import pandas as pd
 from data_processing.preprocessing import preprocess_data
 
 # 加载测试数据，指定正确路径和引擎
-file_path = "/home/chenbo/my_project/test_solar_data.xlsx"
+file_path = "test_solar_data.xlsx"
 test_data = pd.read_excel(file_path, engine="openpyxl")  # 指定引擎以确保读取正确
 
 # 定义目标列

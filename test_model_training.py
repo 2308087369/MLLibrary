@@ -5,7 +5,7 @@ import pandas as pd
 from data_processing.preprocessing import preprocess_data
 
 # 数据加载
-file_path = "/home/chenbo/my_project/test_solar_data.xlsx"
+file_path = "test_solar_data.xlsx"
 test_data = pd.read_excel(file_path, engine="openpyxl")
 
 # 数据预处理（省略了 preprocess_data 函数的实现）
